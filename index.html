@@ -6,55 +6,58 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style-mobile.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
         <title>Frontend Mentor | Tip calculator app</title>
     </head>
     <body>
         <div class="main">
             <div class="logo"><img src="images/logo.svg" alt=""></div>
-            <div class="bill">
-                <h2>Bill</h2>
-                <img src="images/icon-dollar.svg" alt="">
-                <input type="text" id="bill-input" name="bill-input">
-            </div>
-            <div class="tip">
-                <h2>Select Tip %</h2>
-                <div class="tip-select-grid">
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
-                    <button>25%</button>
-                    <button>50%</button>
-                    <input type="text" name="custom-tip-input" id="custom-tip-input" placeholder="Custom">
+            <div class="entry">
+                <div class="bill">
+                    <p>Bill</p>
+                    <img src="images/icon-dollar.svg" alt="">
+                    <input type="text" id="bill-input" name="bill-input">
                 </div>
-            </div>
-            <div class="people-amount">
-                <h2>Number of People</h2>
-                <img src="images/icon-person.svg" alt="">
-                <input type="text" name="people-amount-input" id="people-amount-input">
-            </div>
-            <div class="total">
-                <div class="row">
-                    <div class="title">
-                        <h3>Tip Amount</h3>
-                        <span>/ person</span>
-                    </div>
-                    <div class="value">
-                        <h3>0.00</h3>
-                    </div>
-                    <div class="title">
-                        <h3>Total</h3>
-                        <span>/ person</span>
-                    </div>
-                    <div class="value">
-                        <h3>0.00</h3>
+                <div class="tip">
+                    <p>Select Tip %</p>
+                    <div class="tip-select-grid">
+                        <button>5%</button>
+                        <button>10%</button>
+                        <button>15%</button>
+                        <button>25%</button>
+                        <button>50%</button>
+                        <input type="text" name="custom-tip-input" id="custom-tip-input" placeholder="Custom">
                     </div>
                 </div>
-                <div class="row">
-                    <button>Reset</button>
+                <div class="people-amount">
+                    <p>Number of People</p>
+                    <img src="images/icon-person.svg" alt="">
+                    <input type="text" name="people-amount-input" id="people-amount-input">
                 </div>
+                <div class="total">
+                    <div class="row">
+                        <div class="title">
+                            <h3>Tip Amount</h3>
+                            <span>/ person</span>
+                        </div>
+                        <div class="value">
+                            <h3>0.00</h3>
+                        </div>
+                        <div class="title">
+                            <h3>Total</h3>
+                            <span>/ person</span>
+                        </div>
+                        <div class="value">
+                            <h3>0.00</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button>Reset</button>
+                    </div>
+                </div>    
             </div>
         </div>
         <script src="script.js"></script>
