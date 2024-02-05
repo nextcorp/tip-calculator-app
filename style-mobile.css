@@ -7,7 +7,7 @@
 
     .container {
         padding-inline: 1rem;
-        padding-top: 1rem;
+        padding-block: 1rem;
     }
 
     .bill, .people-amount {
@@ -34,6 +34,11 @@
         grid-template-columns: repeat(2, calc(50% - 0.5rem));
     }
 
+    .row:first-child {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
     .row {
         display: flex;
         align-items: center;
@@ -46,6 +51,7 @@
     .row-reset-button {
         width: 100%;
         border-radius: 0.3rem;
+        margin-top: 1rem;
     }
 
     input[name="bill-input"], input[name="people-amount-input"] {

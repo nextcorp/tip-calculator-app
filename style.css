@@ -15,14 +15,17 @@ body {
 
 button {
     background: hsl(183, 100%, 15%);
+    color:hsl(0, 0%, 100%);
     border: none;
+    border-radius: 8px;
+    padding-block: 0.25rem;
 }
 
 .total button {
     background: hsl(172, 67%, 45%);
 }
 
-.total .value h3 {
+.total .value h1 {
     color: hsl(172, 67%, 45%);
 }
 
