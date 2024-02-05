@@ -15,12 +15,12 @@ The designs were created to the following widths:
 
 ### Neutral
 
-- Very dark cyan: hsl(183, 100%, 15%)
-- Dark grayish cyan: hsl(186, 14%, 43%)
-- Grayish cyan: hsl(184, 14%, 56%)
-- Light grayish cyan: hsl(185, 41%, 84%)
-- Very light grayish cyan: hsl(189, 41%, 97%)
-- White: hsl(0, 0%, 100%)
+- Very dark cyan: hsl(183, 100%, 15%)               [V] rgb(0, 73, 77)
+- Dark grayish cyan: hsl(186, 14%, 43%)             rgb(94, 122, 125)
+- Grayish cyan: hsl(184, 14%, 56%)                  rgb(127, 156, 159)
+- Light grayish cyan: hsl(185, 41%, 84%)           [V] rgb(197, 228, 231)
+- Very light grayish cyan: hsl(189, 41%, 97%)       rgb(244, 250, 250)
+- White: hsl(0, 0%, 100%)                          [V] rgb(255, 255, 255)
 
 ## Typography
 
