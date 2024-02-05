@@ -33,4 +33,21 @@
         grid-template-rows: repeat(3, 33%);
         grid-template-columns: repeat(2, calc(50% - 0.5rem));
     }
+
+    .row {
+        display: flex;
+    }
+
+    .row-value {
+        margin-left: auto;
+    }
+
+    .row-reset-button {
+        width: 100%;
+    }
+
+    input[name="bill-input"], input[name="people-amount-input"] {
+        width: 100%;
+        padding-left: 1.5rem; 
+    }
 }
