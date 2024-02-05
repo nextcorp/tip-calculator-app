@@ -1,0 +1,12 @@
+@media screen and (max-width: 900px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-block: 1.5rem;
+    }
+
+    .container {
+        padding-inline: 1rem;
+        padding-top: 1rem;
+    }
+}
