@@ -5,6 +5,10 @@
         margin-block: 1.5rem;
     }
 
+    .main {
+        height: fit-content;
+    }
+
     .container {
         padding-inline: 1rem;
         padding-block: 1rem;
