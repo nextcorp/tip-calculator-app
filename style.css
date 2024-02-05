@@ -44,4 +44,5 @@ p {
 
 input {
     background: hsl(189, 41%, 97%);
+    border: none;
 }
