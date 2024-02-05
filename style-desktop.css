@@ -1,4 +1,10 @@
 @media screen and (min-width: 921px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
     .container {
         max-width: 920px;
         display: grid;
@@ -13,6 +19,8 @@
     .total {
         grid-column: 2 / 2;
         grid-row: 1 / 4;
+        display: grid;
+        grid-template-rows: auto;
     }
 
     .tip-select-grid {
