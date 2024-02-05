@@ -12,24 +12,50 @@
         <title>Frontend Mentor | Tip calculator app</title>
     </head>
     <body>
-        Bill
-
-        Select Tip %
-        5%
-        10%
-        15%
-        25%
-        50%
-        Custom
-
-        Number of People
-
-        Tip Amount
-        / person
-
-        Total
-        / person
-
-        Reset
+        <main>
+            <div class="logo"><img src="images/logo.svg" alt=""></div>
+            <div class="bill">
+                <h2>Bill</h2>
+                <img src="images/icon-dollar.svg" alt="">
+                <input type="text" id="bill-input" name="bill-input">
+            </div>
+            <div class="tip">
+                <h2>Select Tip %</h2>
+                <div class="tip-select-grid">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                    <button>25%</button>
+                    <button>50%</button>
+                    <input type="text" name="custom-tip-input" id="custom-tip-input" placeholder="Custom">
+                </div>
+            </div>
+            <div class="people-amount">
+                <h2>Number of People</h2>
+                <img src="images/icon-person.svg" alt="">
+                <input type="text" name="people-amount-input" id="people-amount-input">
+            </div>
+            <div class="total">
+                <div class="row">
+                    <div class="title">
+                        <h1>Tip Amount</h1>
+                        <span>/ person</span>
+                    </div>
+                    <div class="value">
+                        <h1>0.00</h1>
+                    </div>
+                    <div class="title">
+                        <h1>Total</h1>
+                        <span>/ person</span>
+                    </div>
+                    <div class="value">
+                        <h1>0.00</h1>
+                    </div>
+                    <button></button>
+                </div>
+                <div class="row">Reset</div>
+            </div>
+        </main>
+        <script src="script.js"></script>
     </body>
 </html>
