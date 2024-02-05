@@ -36,6 +36,7 @@
 
     .row {
         display: flex;
+        align-items: center;
     }
 
     .row-value {
@@ -44,6 +45,7 @@
 
     .row-reset-button {
         width: 100%;
+        border-radius: 0.3rem;
     }
 
     input[name="bill-input"], input[name="people-amount-input"] {
@@ -62,4 +64,20 @@
         padding-inline: 1rem;
         padding-block: 1rem;
     }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-value h1 {
+        font-size: 1.2rem;
+    }
+
+    .row-title {
+        margin-bottom: 0;
+        margin-top: 0;
+        justify-content: center;
+    }
+
 }

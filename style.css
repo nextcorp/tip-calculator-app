@@ -46,3 +46,15 @@ input {
     background: hsl(189, 41%, 97%);
     border: none;
 }
+
+.row-title {
+    color: hsl(0, 0%, 100%);
+}
+
+.row span {
+    font-size: 0.7rem;
+}
+
+.row-reset-button {
+    color: hsl(183, 100%, 15%);
+}
