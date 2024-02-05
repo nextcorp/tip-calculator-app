@@ -10,8 +10,6 @@ body {
 
 .container {
     background: hsl(0, 0%, 100%);
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
 }
 
 button {

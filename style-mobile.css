@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 920px) {
     .logo {
         display: flex;
         justify-content: center;
@@ -12,6 +12,8 @@
     .container {
         padding-inline: 1rem;
         padding-block: 1rem;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
     }
 
     .bill, .people-amount {
