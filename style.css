@@ -1,3 +1,7 @@
+html {
+    font-size: 24px
+}
+
 body {
     font-family: 'Space Mono', monospace;
     background: hsl(185, 41%, 84%);
