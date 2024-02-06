@@ -10,10 +10,22 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: 1fr;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    p {
+        font-size: 0.65rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .tip-section {
+        margin-block: 1.5rem;
     }
 
     .total-section {
         height: 100%;
+        padding: 1.5rem;
         position: relative;
     }
 
@@ -27,6 +39,7 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         grid-template-rows: 1fr;
+        gap: 0.7rem;
     }
 
     .tip-grid,
@@ -36,9 +49,12 @@
     }
 
     .reset-button {
+        width: calc(100% - 3rem);
         position: absolute;
-        bottom: 0;
+        bottom: 1.5rem;
     }
+
+
 }
 
 @media screen and (min-height: 483px) and (min-width: 921px) {

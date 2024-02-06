@@ -6,7 +6,6 @@
     }
 
     .main {
-        border-radius: 24px;
         padding-inline: 1rem;
         padding-block: 1rem;
     }
@@ -33,7 +32,6 @@
 
     .total-section {
         padding: 1rem;
-        border-radius: 16px;
     }
 
     .bill-section, 
