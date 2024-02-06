@@ -14,6 +14,7 @@
 
     .total-section {
         height: 100%;
+        position: relative;
     }
 
     .total-row {
@@ -32,6 +33,11 @@
     input:not([name="custom-tip-input"]),
     .reset-button {
         width: 100%;
+    }
+
+    .reset-button {
+        position: absolute;
+        bottom: 0;
     }
 }
 
