@@ -23,7 +23,7 @@
     }
 
     .tip-section {
-        margin-block: 1.5rem;
+        margin-block: 2rem;
     }
 
     .total-section {
@@ -72,5 +72,15 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+    }
+}
+
+@media screen and (max-height: 484px) and (min-width: 920px) {
+    .main {
+        margin-inline: auto;
+    }
+
+    .logo {
+        margin-top: 3rem;
     }
 }
