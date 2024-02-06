@@ -16,25 +16,19 @@
         gap: 1rem;
     }
 
-    .bill, .tip, .people-amount {
-        grid-column: 1 / 2;
-    }
-
     .total {
-        grid-column: 2 / 2;
-        grid-row: 1 / 4;
-        display: grid;
-        grid-template-rows: auto;
+        /*display: grid;
+        grid-template-rows: auto;*/
         border-radius: 16px;
         padding: 1rem;
     }
 
-    .tip-select-grid {
+    /*.tip-select-grid {
         display: grid;
         gap: 1rem;
         grid-template-rows: repeat(2, 50%);
         grid-template-columns: repeat(3, calc(33% - 0.6rem));
-    }
+    }*/
 
     .row {
         display: flex;
