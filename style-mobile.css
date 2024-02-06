@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 920px) {
     .logo {
         display: flex;
         justify-content: center;
@@ -6,88 +6,64 @@
     }
 
     .main {
-        height: fit-content;
-    }
-
-    .container {
         padding-inline: 1rem;
         padding-block: 1rem;
-    }
-
-    .bill, .people-amount {
-        position: relative;
-    }
-
-    .input-icon {
-        position: absolute;
-        bottom: 12px;
-        left: 16px;
-        max-width: 17px;
-        max-height: 17px;
-    }
-
-    .input-icon img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .tip-select-grid {
-        display: grid;
-        gap: 1rem;
-        grid-template-rows: repeat(3, 33%);
-        grid-template-columns: repeat(2, calc(50% - 0.5rem));
-    }
-
-    .row:first-child {
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .row {
-        display: flex;
-        align-items: center;
-    }
-
-    .row-value {
-        margin-left: auto;
-    }
-
-    .row-reset-button {
-        width: 100%;
-        border-radius: 0.3rem;
-        margin-top: 1rem;
-    }
-
-    input[name="bill-input"], input[name="people-amount-input"] {
-        width: 100%;
-        padding-left: 1.5rem; 
     }
 
     p {
         font-size: 0.7rem;
-        margin-block: 0.5rem;
     }
 
-    .total {
-        margin-top: 1rem;
-        border-radius: 16px;
-        padding-inline: 1rem;
-        padding-block: 1rem;
+    .row-title p {
+        font-size: 0.65rem;
     }
 
-    .title {
-        display: flex;
-        flex-direction: column;
+    div:not(.row-title) p {
+        margin-bottom: 0.5rem;
     }
 
     .row-value h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
-    .row-title {
-        margin-bottom: 0;
-        margin-top: 0;
-        justify-content: center;
+    .section:first-child {
+        margin-inline: 0.3rem;
     }
 
+    .total-section {
+        padding: 1rem;
+    }
+
+    .bill-section, 
+    .tip-section, 
+    .people-amount-section {
+        margin-block: 1rem;
+    }
+
+    .reset-button {
+        width: 100%;
+        margin-top: 1.25rem;
+    }
+
+    .tip-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0.7rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .total-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .total-row:first-child {
+        margin-top: 0.5rem;
+        margin-bottom: 0.7rem;
+    }
 }

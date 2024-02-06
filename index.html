@@ -7,63 +7,82 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style-mobile.css">
+        <link rel="stylesheet" href="input-icon.css">
+        <link rel="stylesheet" href="style-desktop.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
         <title>Frontend Mentor | Tip calculator app</title>
     </head>
     <body>
-        <div class="main">
-            <div class="logo"><img src="images/logo.svg" alt=""></div>
-            <div class="container">
-                <div class="bill">
-                    <p>Bill</p>
-                    <div class="input-icon">
-                        <img src="images/icon-dollar.svg" alt="">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+
+            <div class="main">
+                <div class="section">
+
+                    <div class="bill-section">
+                        <p>Bill</p>
+                        <div class="input-icon">
+                            <img src="images/icon-dollar.svg" alt="">
+                        </div>
+                        <input type="text" id="bill-input" name="bill-input">
                     </div>
-                    <input type="text" id="bill-input" name="bill-input">
+
+                    <div class="tip-section">
+                        <p>Select Tip %</p>
+                        <div class="tip-grid">
+                            <button>5%</button>
+                            <button>10%</button>
+                            <button>15%</button>
+                            <button>25%</button>
+                            <button>50%</button>
+                            <input type="text" name="custom-tip-input" id="custom-tip-input" placeholder="Custom">
+                        </div>
+                    </div>
+
+                    <div class="people-amount-section">
+                        <p>Number of People</p>
+                        <div class="input-icon">
+                            <img src="images/icon-person.svg" alt="">
+                        </div>
+                        <input type="text" name="people-amount-input" id="people-amount-input">
+                    </div>
+
                 </div>
-                <div class="tip">
-                    <p>Select Tip %</p>
-                    <div class="tip-select-grid">
-                        <button>5%</button>
-                        <button>10%</button>
-                        <button>15%</button>
-                        <button>25%</button>
-                        <button>50%</button>
-                        <input type="text" name="custom-tip-input" id="custom-tip-input" placeholder="Custom">
-                    </div>
+
+                <div class="section">
+
+                    <div class="total-section">
+                        <div class="total-row">
+                            <div class="row-title">
+                                <p>Tip Amount</p>
+                                <p>/ person</p>
+                            </div>
+                            <div class="row-value">
+                                <h1>$0.00</h1>
+                            </div>
+                        </div>
+
+                        <div class="total-row">
+                            <div class="row-title">
+                                <p>Total</p>
+                                <p>/ person</p>
+                            </div>
+                            <div class="row-value">
+                                <h1>$0.00</h1>
+                            </div>
+                        </div>
+
+                        <div class="total-row">
+                            <button class="reset-button">Reset</button>
+                        </div>
+                    </div>  
+
                 </div>
-                <div class="people-amount">
-                    <p>Number of People</p>
-                    <div class="input-icon">
-                        <img src="images/icon-person.svg" alt="">
-                    </div>
-                    <input type="text" name="people-amount-input" id="people-amount-input">
-                </div>
-                <div class="total">
-                    <div class="row">
-                        <div class="title">
-                            <p class="row-title">Tip Amount</p>
-                            <span>/ person</span>
-                        </div>
-                        <div class="value row-value">
-                            <h1>0.00</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="title">
-                            <p class="row-title">Total</p>
-                            <span>/ person</span>
-                        </div>
-                        <div class="value row-value">
-                            <h1>0.00</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <button class="row-reset-button">Reset</button>
-                    </div>
-                </div>    
+
             </div>
         </div>
         <script src="script.js"></script>

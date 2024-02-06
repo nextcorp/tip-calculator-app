@@ -1,0 +1,86 @@
+@media screen and (min-width: 921px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .main {
+        max-width: 920px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: 1fr;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    p {
+        font-size: 0.65rem;
+    }
+
+    div:not(.row-title) > p {
+        margin-bottom: 0.5rem;
+    }
+
+    .tip-section {
+        margin-block: 2rem;
+    }
+
+    .total-section {
+        height: 100%;
+        padding: 1.5rem;
+        position: relative;
+    }
+
+    .total-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .total-row:nth-child(2) {
+        margin-top: 1rem;
+    }
+
+    .tip-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: 1fr;
+        gap: 0.7rem;
+    }
+
+    .tip-grid,
+    input:not([name="custom-tip-input"]),
+    .reset-button {
+        width: 100%;
+    }
+
+    .reset-button {
+        width: calc(100% - 3rem);
+        position: absolute;
+        bottom: 1.5rem;
+        font-size: 0.7rem;
+        padding-block: 0.5rem;
+    }
+
+
+}
+
+@media screen and (min-height: 483px) and (min-width: 921px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-height: 484px) and (min-width: 920px) {
+    .main {
+        margin-inline: auto;
+    }
+
+    .logo {
+        margin-top: 3rem;
+    }
+}
