@@ -16,6 +16,9 @@
 
     p {
         font-size: 0.65rem;
+    }
+
+    div:not(.row-title) > p {
         margin-bottom: 0.5rem;
     }
 
@@ -35,6 +38,10 @@
         align-items: center;
     }
 
+    .total-row:nth-child(2) {
+        margin-top: 1rem;
+    }
+
     .tip-grid {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -52,6 +59,8 @@
         width: calc(100% - 3rem);
         position: absolute;
         bottom: 1.5rem;
+        font-size: 0.7rem;
+        padding-block: 0.5rem;
     }
 
 
