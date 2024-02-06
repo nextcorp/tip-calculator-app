@@ -1,66 +1,45 @@
 @media screen and (min-width: 921px) {
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 3rem;
-    }
-    
-    .container {
-        max-width: 920px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        border-radius: 16px;
-        padding: 1.5rem;
-        gap: 1rem;
-    }
-
-    .total {
-        /*display: grid;
-        grid-template-rows: auto;*/
-        border-radius: 16px;
-        padding: 1rem;
-        height: 100%;
-    }
-
-    /*.tip-select-grid {
-        display: grid;
-        gap: 1rem;
-        grid-template-rows: repeat(2, 50%);
-        grid-template-columns: repeat(3, calc(33% - 0.6rem));
-    }*/
-
-    .row {
-        display: flex;
-        align-items: center;
-    }
-
-    .row-value {
-        margin-left: auto;
-    }
-
-    .row-reset-button {
-        width: 100%;
-        border-radius: 0.3rem;
-        margin-top: 1rem;
-    }
-
     .logo {
         display: flex;
         justify-content: center;
         margin-bottom: 3rem;
     }
 
-    input[name="bill-input"], input[name="people-amount-input"] {
+    .main {
+        max-width: 920px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: 1fr;
+    }
+
+    .total-section {
+        height: 100%;
+    }
+
+    .total-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tip-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: 1fr;
+    }
+
+    .tip-grid,
+    input:not([name="custom-tip-input"]),
+    .reset-button {
         width: 100%;
     }
+}
 
-    p {
-        font-size: 0.75rem;
-    }
-
-    .row-title {
-        font-size: 0.6rem;
+@media screen and (min-height: 483px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
     }
 }

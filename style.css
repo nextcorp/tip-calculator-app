@@ -49,7 +49,8 @@ p {
 }
 
 input {
-    background: hsl(189, 41%, 97%);
+    /*background: hsl(189, 41%, 97%);*/
+    background: hsl(180, 53%, 29%);
     color: hsl(183, 100%, 15%);
     border: none;
     direction: rtl;
