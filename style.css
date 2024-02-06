@@ -8,7 +8,7 @@ body {
     height: 100vh;
 }
 
-.container {
+.main {
     background: hsl(0, 0%, 100%);
 }
 
@@ -20,19 +20,16 @@ button {
     padding-block: 0.25rem;
 }
 
-.total button {
+.reset-button {
     background: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
 }
 
-.total .value h1 {
+.row-value h1 {
     color: hsl(172, 67%, 45%);
 }
 
-h3 {
-    color: hsl(0, 0%, 100%);
-}
-
-.title span {
+.row-title p:nth-child(2) {
     color: hsl(184, 14%, 56%);
 }
 
@@ -47,16 +44,4 @@ p {
 input {
     background: hsl(189, 41%, 97%);
     border: none;
-}
-
-.row-title {
-    color: hsl(0, 0%, 100%);
-}
-
-.row span {
-    font-size: 0.7rem;
-}
-
-.row-reset-button {
-    color: hsl(183, 100%, 15%);
 }
