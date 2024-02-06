@@ -1,2 +1,47 @@
 @media screen and (max-width: 920px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-block: 1.5rem;
+    }
+
+    .main {
+        border-radius: 16px;
+        padding-inline: 1rem;
+        padding-block: 2rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    .row-value h1 {
+        font-size: 1.5rem;
+    }
+
+    .total-section {
+        padding: 1rem;
+        border-radius: 16px;
+    }
+
+    .bill-section, 
+    .tip-section, 
+    .people-amount-section {
+        margin-block: 1rem;
+    }
+
+    .reset-button {
+        width: 100%;
+    }
+
+    .tip-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0.7rem;
+    }
+
+    input {
+        width: 100%;
+    }
 }

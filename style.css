@@ -29,6 +29,10 @@ button {
     color: hsl(172, 67%, 45%);
 }
 
+.row-title p:nth-child(1) {
+    color: hsl(0, 0%, 100%);
+}
+
 .row-title p:nth-child(2) {
     color: hsl(184, 14%, 56%);
 }
@@ -37,7 +41,7 @@ p {
     color: hsl(186, 14%, 43%);
 }
 
-.total {
+.total-section {
     background: hsl(183, 100%, 15%);    
 }
 
