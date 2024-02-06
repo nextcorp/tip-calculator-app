@@ -41,7 +41,7 @@
     }
 }
 
-@media screen and (min-height: 483px) {
+@media screen and (min-height: 483px) and (min-width: 921px) {
     body {
         display: flex;
         align-items: center;
