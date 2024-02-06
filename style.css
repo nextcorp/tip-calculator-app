@@ -49,8 +49,8 @@ p {
 }
 
 input {
-    /*replace this color temporarily because i cant see it background: hsl(189, 41%, 97%);*/
-    background: hsl(180, 74%, 79%);
+    background: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
     border: none;
     direction: rtl;
     border-radius: 8px;
