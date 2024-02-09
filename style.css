@@ -21,6 +21,17 @@ button {
     padding-block: 0.25rem;
 }
 
+.pressed {
+    background: hsl(172, 53%, 57%);
+    color:hsl(183, 100%, 15%);
+}
+
+input[name="custom-tip-input"].pressed {
+    outline: 2px solid hsl(172, 53%, 57%);
+    background: unset;
+    color: unset;
+}
+
 .reset-button {
     background: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
