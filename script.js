@@ -22,13 +22,16 @@ function round_number(number, digits) {
 }
 
 function calcTip() {
-    
-    const tip_result = round_number((tip / 100) * bill, 2)
-    const total_result = round_number(bill + tip_result, 2)
-    const each_person = round_number(total_result / people, 2)
-    
-    tip_amount_person.textContent = `$${String(tip_result)}`
-    total_person.textContent = `$${String(each_person)}`
+    if ((bill > 0) && (tip > 0) && (people > 0)) {
+        const tip_result = round_number((tip / 100) * bill, 2)
+        const total_result = round_number(bill + tip_result, 2)
+        const each_person = round_number(total_result / people, 2)
+        
+        
+
+        tip_amount_person.textContent = `$${String(round_number(tip_result / people, 2))}`
+        total_person.textContent = `$${String(each_person)}`
+    }
 }
 
 function resetHandler() {
@@ -51,17 +54,23 @@ function resetHandler() {
 
 function peopleAmountHandler() {
     people = Number(people_amount_input.value) || 0
-    calcTip()
+    if (people > 0) {
+        calcTip()
+    }
 }
 
 function billInputHandler() {
     bill = Number(bill_input.value) || 0
-    calcTip()
+    if (bill > 0) {
+        calcTip()
+    }
 }
 
 function customTipHandler() {
     tip = Number(custom_tip_input.value) || 0
-    calcTip()
+    if (tip > 0) {
+        calcTip()
+    }
 }
 
 function gridClickHandler(e) {
@@ -71,6 +80,7 @@ function gridClickHandler(e) {
     const grid_button = e.target
     if (grid_button.name !== "custom-tip-input") {
         grid_button.classList.add("pressed")
+        tip = Number(grid_button.getAttribute("data-tip-amount"))
         active_button = grid_button
         custom_tip_input.value = null
     }
