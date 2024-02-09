@@ -59,12 +59,10 @@ function peopleAmountHandler() {
     people = Number(people_amount_input.value) || 0
     if (people > 0) {
         calcTip()
-
         if (people_amount_input.classList.contains("err-field")) {
             people_amount_input.classList.remove("err-field")    
             err_message.classList.add("hidden")
         }
-
     } else {
         people_amount_input.classList.add("err-field")
         err_message.classList.remove("hidden")
