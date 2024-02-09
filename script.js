@@ -4,6 +4,8 @@ const custom_tip_input = tip_grid.querySelector(`input[name="custom-tip-input"]`
 const people_amount_input = document.querySelector(`input[name="people-amount-input"]`)
 const reset_button = document.querySelector(".reset-button")
 
+const err_message = document.querySelector(".people-amount-error-message")
+
 const tip_amount_person = document.querySelector(".tip-amount-person")
 const total_person = document.querySelector(".total-person")
 
@@ -45,6 +47,8 @@ function resetHandler() {
     if (grid_pressed) grid_pressed.classList.remove("pressed")
     custom_tip_input.value = null
     people_amount_input.value = null
+    people_amount_input.classList.remove("err-field")
+    err_message.classList.add("hidden")
 
     tip_amount_person.textContent = "$0.00"
     total_person.textContent = "$0.00"
@@ -55,6 +59,15 @@ function peopleAmountHandler() {
     people = Number(people_amount_input.value) || 0
     if (people > 0) {
         calcTip()
+
+        if (people_amount_input.classList.contains("err-field")) {
+            people_amount_input.classList.remove("err-field")    
+            err_message.classList.add("hidden")
+        }
+
+    } else {
+        people_amount_input.classList.add("err-field")
+        err_message.classList.remove("hidden")
     }
 }
 
