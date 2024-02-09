@@ -24,12 +24,11 @@ function round_number(number, digits) {
 function calcTip() {
     if ((bill > 0) && (tip > 0) && (people > 0)) {
         const tip_result = round_number((tip / 100) * bill, 2)
+        const tip_per_person = round_number((((tip / 100) * bill) / people) , 2)
         const total_result = round_number(bill + tip_result, 2)
         const each_person = round_number(total_result / people, 2)
         
-        
-
-        tip_amount_person.textContent = `$${String(round_number(tip_result / people, 2))}`
+        tip_amount_person.textContent = `$${String(tip_per_person)}`
         total_person.textContent = `$${String(each_person)}`
     }
 }
