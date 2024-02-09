@@ -3,8 +3,16 @@
     color:hsl(183, 100%, 15%);
 }
 
+input:hover, button:hover {
+    cursor: pointer;
+}
+
 input[name="custom-tip-input"]:focus,
 input[name="bill-input"]:focus, input[name="custom-tip-input"]:focus,
 input[name="people-amount-input"]:focus {
     outline: 2px solid hsl(172, 53%, 57%);
+}
+
+.reset-button:hover {
+    background: hsl(172, 53%, 57%);
 }
