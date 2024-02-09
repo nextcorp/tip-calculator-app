@@ -16,3 +16,20 @@ input[name="people-amount-input"]:focus {
 .reset-button:hover {
     background: hsl(172, 53%, 57%);
 }
+
+.people-amount-section p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.people-amount-error-message {
+    color: hsl(15, 31%, 57%);
+}
+
+.err-field {
+    outline: 2px solid hsl(15, 31%, 57%);
+}
+
+.hidden {
+    display: none;
+}
